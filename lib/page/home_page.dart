@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 import 'package:first_app/widget/add_todo_dialog_widget.dart';
+import 'package:first_app/widget/todo_list_widget.dart';
 
 class HomePage extends StatefulWidget{
   _HomePageState createState()=> _HomePageState();
@@ -9,7 +10,7 @@ class _HomePageState extends State<HomePage>{
   int selectedIndex=0;
   Widget build(BuildContext context){
     final tabs=[
-      Container(),
+      TodoListWidget(),
       Container(),
     ];
     return Scaffold(
